@@ -1,0 +1,112 @@
+# Translation of Plugins - NextGEN Download Gallery - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - NextGEN Download Gallery - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-12-05 08:31:47+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-alpha.11\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - NextGEN Download Gallery - Stable (latest release)\n"
+
+#: views/settings-form.php:25
+msgctxt "settings"
+msgid "enable button to download all images"
+msgstr "кнопка включения для загрузки всех изображений"
+
+#: views/settings-form.php:20
+msgctxt "settings"
+msgid "enable button to select all images"
+msgstr "кнопка включения для выбора всех изображений"
+
+#: views/requires-php.php:15
+msgid "Please upgrade your website hosting. At least PHP %s is recommended."
+msgstr "Обновите хостинг веб-сайта. Рекомендуется по крайней мере PHPи%s."
+
+#: views/requires-php.php:10
+msgid "NextGEN Download Gallery requires PHP %1$s or higher; your website has PHP %2$s which is {{a}}old, obsolete, and unsupported{{/a}}."
+msgstr "NextGEN Download Gallery требует PHP %1$s или выше; на вашем сайте установлен PHP %2$s, который является {{a}} старым, устаревшим и неподдерживаемым{{/a}}."
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/nextgen-download-gallery/"
+msgstr "https://wordpress.org/plugins/nextgen-download-gallery/"
+
+#. Author URI of the plugin
+msgid "https://shop.webaware.com.au/"
+msgstr "https://shop.webaware.com.au/"
+
+#. Author of the plugin
+msgid "WebAware"
+msgstr "WebAware"
+
+#. Description of the plugin
+msgid "Add a template to NextGEN Gallery that provides multiple-file downloads for trade/media galleries"
+msgstr "Добавьте шаблон в NextGEN Gallery, обеспечивающий загрузку нескольких файлов для торговых/медийных галерей"
+
+#. Plugin Name of the plugin
+#: includes/class.NextGENDownloadGallery.php:301 views/settings-form.php:13
+msgid "NextGEN Download Gallery"
+msgstr "NextGEN Download Gallery"
+
+#: templates/gallery-download.php:77
+msgid "download all images"
+msgstr "скачать все изображения"
+
+#: templates/gallery-download.php:72
+msgid "download selected images"
+msgstr "скачать выбранные изображения"
+
+#: templates/gallery-download.php:71
+msgid "select all"
+msgstr "выбрать все"
+
+#: templates/gallery-download.php:40
+msgid "[View with PicLens]"
+msgstr "[Просмотр из PicLens]"
+
+#: includes/class.NextGENDownloadGallery.php:646
+msgctxt "plugin details links"
+msgid "Donate"
+msgstr "Пожертвовать"
+
+#: includes/class.NextGENDownloadGallery.php:645
+msgctxt "plugin details links"
+msgid "Translate"
+msgstr "Перевести"
+
+#: includes/class.NextGENDownloadGallery.php:644
+msgctxt "plugin details links"
+msgid "Rating"
+msgstr "Рейтинг"
+
+#: includes/class.NextGENDownloadGallery.php:643
+msgctxt "plugin details links"
+msgid "Get help"
+msgstr "Получить помощь"
+
+#: includes/class.NextGENDownloadGallery.php:588
+msgid "No images selected for download"
+msgstr "Для загрузки не выбрано ни одного изображения"
+
+#: includes/class.NextGENDownloadGallery.php:585
+msgid "No files found to download"
+msgstr "Не найдено файлов для загрузки"
+
+#: includes/class.NextGENDownloadGallery.php:450
+msgid "NextGEN Download Gallery requires NextGEN Gallery or NextCellent Gallery"
+msgstr "Для работы NextGEN Download Gallery требуется NextGEN Gallery или NextCellent Gallery"
+
+#. translators: gallery title when it has been created from image tags
+#: includes/class.NextGENDownloadGallery.php:273
+msgid "tagged: %s"
+msgstr "отмечено %s"
+
+#: includes/class.NextGENDownloadGallery.php:213
+msgid "Overview"
+msgstr "Обзор"
+
+#: includes/class.NextGENDownloadGallery.php:93
+msgid "Please select one or more images to download"
+msgstr "Выберите одно или несколько изображений для загрузки"

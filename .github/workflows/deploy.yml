@@ -1,0 +1,38 @@
+name: Deploy Wordpress
+
+on:
+    push:
+        branches: 
+            - main 
+
+
+jobs:
+    deploy:
+        if: "!contains(github.event.commits[0].message, '[skip ci]')"
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3 
+
+            - name: Setup SSH 
+              uses: webfactory/ssh-agent@v0.8.1
+              with:
+                ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+            - name: Install utils
+              run: |
+                ssh -6 ${{ secrets.HOST_VPS }}@${{ secrets.VPS_IPV6_ADDRESS }} \
+                "apt update && \
+                apt install apache2 php libapache2-mod-php php-mysql unzip mysql-server"
+            
+            - name: Deploy WordPress Project to server
+              env:
+                RSYNC_RSH: "ssh -6"
+              run: |
+                rsync -avz --exclude '.git*' --delete \
+                ./ ${{ secrets.HOST_VPS }}@${{ secrets.VPS_IPV6_ADDRESS }}:/var/www/html/wordpress
+                
+
+
+
