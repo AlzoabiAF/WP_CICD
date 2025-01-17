@@ -1,0 +1,28 @@
+hosts: 192.168.56.11
+become: yes
+gather_facts: no
+
+- name: Copy project dir
+  synchronize: 
+    src: project
+    dest: .
+    delete: yes
+
+- name: Copy apache conf file
+  copy: 
+    src: apache2.conf
+    dest: /etc/apache/apache2.conf
+
+- name: Copy setup script
+  copy: 
+    src: setup.sh
+    dest: .
+    mode: +x
+    
+- name: Copy mysql setup script
+  copy: 
+    src: mysql_secure_installation.sh
+    dest: .
+    mode: +x
+
+

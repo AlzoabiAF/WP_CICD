@@ -1,0 +1,2 @@
+[host]
+node ansible_host= ansible_user=test
